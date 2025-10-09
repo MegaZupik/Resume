@@ -1,0 +1,122 @@
+.dialogs {}
+
+.title {
+    color: rgb(158, 154, 154);
+    margin: 0 0 20px 0;
+}
+
+.dialogsContent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.users {
+    border-right: 2px solid rgb(121, 45, 151);
+    flex: 0 0 30%;
+    padding-right: 5px;
+    height: 84.4vh;
+    overflow: auto;
+}
+
+.messages {
+    flex: 0 1 70%;
+    height: 80vh;
+    padding: 20px 20px;
+    position: relative;
+    display: flex;
+    flex-flow: nowrap column;
+}
+
+
+.messages::after {
+    position: absolute;
+    content: '';
+    background-image: url(../../assets/img/messages-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.messagesValue {
+    flex: 1 1;
+    overflow: auto;
+    display: flex;
+    flex-flow: nowrap column;
+}
+
+.messagesInput {}
+
+form {
+    position: relative;
+}
+
+textarea {
+    outline: none;
+    border: 1px solid #0a6bc5;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    resize: none;
+    background-color: #d4d4d4;
+}
+
+.textareaError {
+    border: 1px solid #fa3041;
+}
+
+.errorMessage {
+    min-height: 20px;
+}
+
+.errorMessage p {
+    width: 792px;
+    background-color: #00000059;
+    padding-left: 30px;
+    font-weight: 500;
+    color: #fa3041;
+    font-size: 16px;
+    position: relative;
+}
+
+.errorMessage p::before {
+    position: absolute;
+    content: '';
+    left: 5px;
+    top: 3px;
+    width: 18px;
+    height: 16px;
+    background-image: url('../../assets/img/warning.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.messageSubmit {
+    border: 0;
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    bottom: 25px;
+    right: 180px;
+    background-image: url('../../assets/img/send.svg');
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-color: #0a6bc5;
+    border-radius: 50%;
+    transition: background-color .3s ease-in-out;
+}
+
+.messageSubmit:hover {
+    background-color: #0d63b3;
+}
+
+.messageSubmit:disabled {
+    background-color: rgb(100, 100, 100);
+}

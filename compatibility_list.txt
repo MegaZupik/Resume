@@ -1,0 +1,4 @@
+57884042.key
+	Kaspersky Security Center
+57884043.key
+	Kaspersky Security for WS and FS

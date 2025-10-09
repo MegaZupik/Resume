@@ -1,0 +1,30 @@
+.content {
+  display: grid;
+  grid-template: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    'header header'
+    'nav main';
+}
+
+.mainWrapper {
+  grid-area: main;
+  position: relative;
+}
+
+
+.PreloaderWrapp {
+  position: relative;
+  background-color: #f6f6f6;
+}
+
+.PreloaderItem {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
