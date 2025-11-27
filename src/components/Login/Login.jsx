@@ -23,7 +23,7 @@ const LoginForm = (props) => {
                 <label>Email</label>
                 <input
                     {...register('email', {
-                        required: 'Поле обязательно к заполнению',
+                        required: 'По123ле обязательно к заполнению',
                         minLength: {
                             value: 5,
                             message: 'Не меньше 5 символов'
